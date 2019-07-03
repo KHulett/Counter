@@ -1,13 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+class Counter extends Component (
+  constructor () {
+    super();
+    this.state = {
+      Counter: 0,
+    }
+  }
 
-export default App;
+
+  render() {
+    console.log(this.state.Counter);
+    return(
+      <div></div>
+    )
+  }
+)
+
+export default Counter;
